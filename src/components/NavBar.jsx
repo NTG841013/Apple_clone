@@ -1,5 +1,4 @@
-import React from 'react'
-import {navLinks} from "../constants/index.js";
+import {navLinks} from "../constants";
 
 const NavBar = () => {
     return (
@@ -11,7 +10,6 @@ const NavBar = () => {
                     {navLinks.map(({label}) => (
                         <li key={label}>
                             <a href={label}>{label}</a>
-
                         </li>
 
                         ))}
